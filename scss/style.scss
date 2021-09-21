@@ -194,6 +194,7 @@ body {
         margin: 10px 0 30px;
         font-weight: 400;
         line-height: .7;
+        letter-spacing: -5px;
     
         @media (max-width: 768px) {
             font-size: 65px;
@@ -202,6 +203,11 @@ body {
     
     .course-name-italic {
         font-style: italic;
+    }
+
+    .course-name-marked {
+        background-color: transparent;
+        color: #FF4D26;
     }
 
     .course-bottom-block {
@@ -341,6 +347,7 @@ body {
         font-size: 30px;
         outline: none;
         margin-bottom: 17px;
+        background-color: transparent;
     }
 
     &-textarea {
@@ -362,6 +369,50 @@ body {
 
         .col:last-of-type {
             text-align: right;
+        }
+    }
+}
+
+.course-info-row {
+    min-height: 100vh;
+
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course-bottom-block {
+        align-items: flex-end;
+    }
+}
+
+.course-bottom-block {
+    > * {
+        flex-basis: 50%;
+    }
+}
+
+.program-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    &-item {
+        &-heading {
+            color: #FF4D26;
+            font-size: 18px;
+            margin: 8px 0;
+        }
+    }
+
+    .program-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;    
+        font-size: 30px;
+
+        li {
+            margin: 10px 0;
         }
     }
 }
