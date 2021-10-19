@@ -155,6 +155,12 @@ body {
   z-index: 1;
   min-height: 100vh;
 }
+@media (max-width: 576px) {
+  .course-sect .course-img {
+    min-height: auto;
+    max-height: 50vh;
+  }
+}
 .course-sect .course-img-top {
   top: 0;
   bottom: auto;
@@ -205,6 +211,21 @@ body {
   font-size: 30px;
 }
 
+.start-teaching-sect .row {
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .start-teaching-sect .row .start-teaching-img {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .start-teaching-sect .row .col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
 .text {
   font-size: 30px;
   margin: 20px 0 0;
@@ -241,7 +262,7 @@ body {
   text-decoration: none;
   font-size: 30px;
   padding: 15px;
-  display: inline-block;
+  display: flex;
   border: 0;
   font-family: inherit;
   cursor: pointer;
@@ -303,7 +324,7 @@ body {
 }
 .form-input, .form-textarea {
   font-family: inherit;
-  padding: 25px;
+  padding: 20px 25px;
   border: 2px solid #202020;
   font-size: 30px;
   outline: none;
@@ -339,11 +360,14 @@ body {
   align-items: flex-end;
 }
 
-.course-bottom-block > * {
+.course-bottom-block > div {
   flex-basis: 50%;
 }
 
 .program-sect {
+  min-height: auto;
+}
+.program-sect .container {
   min-height: auto;
 }
 
@@ -351,6 +375,11 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+}
+@media (max-width: 768px) {
+  .program-points {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .program-points-item-heading {
   color: #FF4D26;
@@ -365,6 +394,37 @@ body {
 }
 .program-points .program-list li {
   margin: 10px 0;
+}
+
+@media (max-width: 576px) {
+  .start-learning-sect .row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .start-learning-sect .row .col {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
+
+.start-learning-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.start-learning-list li {
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.start-learning-form {
+  justify-content: center;
+  align-items: center;
+}
+
+.list-arrow {
+  color: #FF195E;
 }
 
 footer {

@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/modal.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Zhe School Homepage</title>
 </head>
@@ -20,13 +23,15 @@
                     <li><a href="">музей</a></li>
                     <li><a href="">контакты</a></li>
                 </ul>
+                <div class="burger-btn"><i>&nbsp;</i><i>&nbsp;</i><i>&nbsp;</i></div>
                 <a href="tel:+7(977)880-92-98" class="navbar-tel">+7 (977) 880-92-98</a>
             </nav>
         </div>
     </header>
     <section class="home-intro-sect orange-bg white-text">
         <div class="container d-flex to-bottom">
-            <h1 class="main-heading">это — платформа для нескучного образования. Мы преподаём языки, кино, театр, дизайн, а также проводим летний лагерь и занимаемся множеством других увлекательных штук.</h1>
+            <h1 class="main-heading">это — платформа для нескучного образования. Мы преподаём языки, кино, театр,
+                дизайн, а также проводим летний лагерь и занимаемся множеством других увлекательных штук.</h1>
         </div>
     </section>
     <section class="course-sect purple-bg white-text">
@@ -34,7 +39,8 @@
         <div class="container d-flex">
             <div class="course-info">
                 <h2 class="course-name">м<span class="course-name-italic">астерская кин</span>о</h2>
-                <p class="text">Пишем собственный сценарий и монтируем по нему кино. Смотрим и обсуждаем фильмы, о которых вы точно не слышали. Знакомимся с аспектами работы режиссера.</p>
+                <p class="text">Пишем собственный сценарий и монтируем по нему кино. Смотрим и обсуждаем фильмы, о
+                    которых вы точно не слышали. Знакомимся с аспектами работы режиссера.</p>
                 <div class="course-bottom-block">
                     <div class="course-specs">
                         <p>2 недели</p>
@@ -61,7 +67,7 @@
                     <a href="" class="btn">Начать занятия</a>
                 </div>
             </div>
-            <img src="img/courses/angl-img.png" class="course-img course-img-top" alt="">
+            <img src="img/courses/angl-img.png" class="course-img" alt="">
         </div>
     </section>
     <section class="course-sect beige-bg white-text">
@@ -140,7 +146,41 @@
                         дисциплинах, от кино и дизайнадо программирования и спектаклей</p>
                 </div>
                 <div class="col">
-                    <a href="" class="btn">Посмотреть всё</a>
+                    <a href="" class="btn btn-transparent">Посмотреть всё</a>
+                </div>
+            </div>
+            <div class="museum-grid">
+                <div class="museum-grid-item">
+                    <div class="museum-grid-image" data-toggle="modal" data-target="#museum-1">
+                        <img src="img/image10.jpg" alt="">
+                        <div class="museum-grid-image-text">Короткометражка в жанре детектива. Дети в лагере под
+                            кураторством преподавателя написали сценарий, сняли и смонтировали кино</div>
+                    </div>
+                    <p class="museum-grid-text">«Записка от безумия»</p>
+                </div>
+                <div class="museum-grid-item">
+                    <div class="museum-grid-image" data-toggle="modal" data-target="#museum-2">
+                        <img src="img/image14.jpg" alt="">
+                        <div class="museum-grid-image-text">Короткометражка в жанре детектива. Дети в лагере под
+                            кураторством преподавателя написали сценарий, сняли и смонтировали кино</div>
+                    </div>
+                    <p class="museum-grid-text">«Битва за лазанью»</p>
+                </div>
+                <div class="museum-grid-item">
+                    <div class="museum-grid-image" data-toggle="modal" data-target="#museum-3">
+                        <img src="img/image21.jpg" alt="">
+                        <div class="museum-grid-image-text">Короткометражка в жанре детектива. Дети в лагере под
+                            кураторством преподавателя написали сценарий, сняли и смонтировали кино</div>
+                    </div>
+                    <p class="museum-grid-text">«Это мы»</p>
+                </div>
+                <div class="museum-grid-item">
+                    <div class="museum-grid-image" data-toggle="modal" data-target="#museum-4">
+                        <img src="img/image22.jpg" alt="">
+                        <div class="museum-grid-image-text">Короткометражка в жанре детектива. Дети в лагере под
+                            кураторством преподавателя написали сценарий, сняли и смонтировали кино</div>
+                    </div>
+                    <p class="museum-grid-text">«Битва за лазанью»</p>
                 </div>
             </div>
         </div>
@@ -160,13 +200,13 @@
     </section>
     <section class="course-sect start-teaching-sect">
         <div class="container">
-            <h2 class="course-name">стать преподавателем</h2>
+            <h2 class="course-name">стать <span class="orange-text">преподавателем</span></h2>
             <div class="row">
                 <div class="col">
                     <p class="text">Если вы хотите хотите провести авторский курс или стать преподавателем в летнем
                         лагере, расскажите нам про себя и свои идеи в форме. Мы свяжемся с вами, если вы нам
                         понравитесь.</p>
-                    <img src="img/start-teaching-img.png" alt="">
+                    <img src="img/start-teaching-img.png" class="start-teaching-img" alt="">
                 </div>
                 <div class="col">
                     <form action="" class="form start-teaching-form">
@@ -218,6 +258,138 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade modal-museum" id="museum-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close.svg"
+                        alt=""></button>
+                <div class="swiper-main">
+                    <div class="swiper museum-slider museum-slider-1">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev museum-prev-1"></div>
+                        <div class="swiper-button-next museum-next-1"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination museum-pagination museum-pagination-1"></div>
+                </div>
+                <div class="museum-text-info">
+                    <p class="museum-name">«Записка от безумия»</p>
+                    <p class="museum-desc">Короткометражка в жанре детектива. Дети в лагере под кураторством преподавателя
+                        написали сценарий, сняли и смонтировали кино</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-museum" id="museum-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close.svg"
+                        alt=""></button>
+                <div class="swiper-main">
+                    <div class="swiper museum-slider museum-slider-2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev museum-prev-2"></div>
+                        <div class="swiper-button-next museum-next-2"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination museum-pagination museum-pagination-2"></div>
+                </div>
+
+                <div class="museum-text-info">
+                    <p class="museum-name">«Записка от безумия»</p>
+                    <p class="museum-desc">Короткометражка в жанре детектива. Дети в лагере под кураторством преподавателя
+                        написали сценарий, сняли и смонтировали кино</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-museum" id="museum-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close.svg"
+                        alt=""></button>
+                <div class="swiper-main">
+                    <div class="swiper museum-slider museum-slider-3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev museum-prev-3"></div>
+                        <div class="swiper-button-next museum-next-3"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination museum-pagination museum-pagination-3"></div>
+                </div>
+
+                <div class="museum-text-info">
+                    <p class="museum-name">«Записка от безумия»</p>
+                    <p class="museum-desc">Короткометражка в жанре детектива. Дети в лагере под кураторством преподавателя
+                        написали сценарий, сняли и смонтировали кино</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-museum" id="museum-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close.svg"
+                        alt=""></button>
+                <div class="swiper-main">
+                    <div class="swiper museum-slider museum-slider-4">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                            <div class="swiper-slide museum-slide"><img src="img/museum/image19.jpg" alt=""></div>
+                        </div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev museum-prev-4"></div>
+                        <div class="swiper-button-next museum-next-4"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination museum-pagination museum-pagination-4"></div>
+                </div>
+
+                <div class="museum-text-info">
+                    <p class="museum-name">«Записка от безумия»</p>
+                    <p class="museum-desc">Короткометражка в жанре детектива. Дети в лагере под кураторством преподавателя
+                        написали сценарий, сняли и смонтировали кино</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/modal.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
