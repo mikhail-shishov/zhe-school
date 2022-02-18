@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/modal.min.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css?3">
-    <title>Zhe School Homepage</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>Главная – Zhe School</title>
 </head>
 
 <body>
@@ -210,10 +211,11 @@
                     <img src="img/start-teaching-img.png" class="start-teaching-img" alt="">
                 </div>
                 <div class="col">
-                    <form action="" class="form start-teaching-form">
-                        <input type="text" name="" id="" class="form-input" placeholder="ваше имя">
-                        <input type="text" name="" id="" class="form-input" placeholder="ссылка на любую соцсеть">
-                        <textarea name="" id="" class="form-textarea" placeholder="расскажите о себе"></textarea>
+                    <form action="https://formspree.io/f/xayvqzgp" method="POST" class="form start-teaching-form">
+                        <input type="text" name="start-teaching-name" id="start-teaching-name" class="form-input" placeholder="ваше имя">
+                        <input type="text" name="start-teaching-soc" id="start-teaching-soc" class="form-input" placeholder="ссылка на любую соцсеть">
+                        <textarea name="start-teaching-text" id="start-teaching-text" class="form-textarea" placeholder="расскажите о себе"></textarea>
+                        <div class="g-recaptcha" data-sitekey="6LcjOYAeAAAAAIAiSY-jac1MXW0xP82Kcd9W4Gvk"></div>
                         <input type="submit" class="btn form-btn" value="отправить форму">
                     </form>
                 </div>
@@ -254,7 +256,7 @@
                 </div>
             </div>
             <div class="footer-line">
-                <p>же.school 2021</p>
+                <p>же.school 2022</p>
                 <p>дизайн делала <a href="">рэнт</a></p>
             </div>
         </div>

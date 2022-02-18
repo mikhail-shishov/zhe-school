@@ -8,6 +8,8 @@ $lightgreen: #2AC0B7;
 $darkgrey: #202020;
 $red: #FF195E;
 
+@import "camp.scss";
+
 @font-face {
     font-family: 'Steinbeck';
     src: url('../fonts/Steinbeck-Regular.woff') format('woff'),
@@ -82,6 +84,12 @@ body {
     color: white;
 }
 
+.white-text a {
+    &:hover {
+        color: white;
+    }
+}
+
 .navbar {
     background-color: #F2F2F2;
     position: fixed;
@@ -141,11 +149,11 @@ body {
     .navbar-tel {
         text-decoration: none;
         color: #FF511B;
-        margin-right: 40px;
         margin-bottom: -5px;
 
         @media (max-width: 992px) {
             margin-left: auto;
+            margin-right: 40px;
         }
     }
 
@@ -245,6 +253,10 @@ body {
 
 .lightgreen-bg {
     background-color: $lightgreen;
+}
+
+.lightgreen-text {
+    color: $lightgreen;
 }
 
 .darkgrey-bg {
@@ -366,6 +378,13 @@ body {
     }
 }
 
+.subheading {
+    font-weight: 400;
+    font-size: 68px;
+    margin: 0;
+    line-height: 1.2;
+}
+
 .intro-course-sect .container,
 .intro-course-sect .course-info {
     min-height: 65vh;
@@ -377,7 +396,7 @@ body {
     }
 }
 
-.navbar + .course-sect {
+.navbar+.course-sect {
     padding-top: 130px;
 }
 
@@ -584,12 +603,17 @@ body {
     &-input,
     &-textarea {
         font-family: inherit;
-        padding: 20px 25px;
+        padding: 15px 25px;
         border: 2px solid #202020;
         font-size: 30px;
         outline: none;
         margin-bottom: 17px;
         background-color: transparent;
+
+        @media (max-width: 992px) {
+            padding: 12px 20px;
+            font-size: 20px;
+        }
     }
 
     &-textarea {
@@ -885,7 +909,33 @@ body {
         }
     }
 }
+
 // test
+.custom-course-sect {
+    .course-img {
+        max-width: 100%;
+        min-height: auto;
+        position: static;
+        margin-top: 40px;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .row {
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+    }
+
+    .start-teaching-form {
+        @media (max-width: 992px) {
+            margin-top: 40px;
+        }
+    }
+}
+
 .person-video {
     max-width: 100%;
 }
@@ -1030,6 +1080,11 @@ footer {
 
             a {
                 text-decoration: none;
+
+                &:hover {
+                    color: white;
+                    text-decoration: underline;
+                }
             }
         }
     }

@@ -1,0 +1,45 @@
+.camp-page {
+    .program-points {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .camp-img {
+        max-width: 100%;
+    }
+
+    .teachers-container {
+        display: flex;
+        gap: 30px;
+
+        .teacher-item {
+            @media (max-width: 1280px) {
+                position: relative;
+            }
+        }
+
+        .teacher-img {
+            position: absolute;
+            max-width: 100%;
+
+            @media (max-width: 1280px) {
+                height: 320px;
+            }
+        }
+
+        .teacher-text {
+            padding: 260px 0 0;
+            position: relative;
+        }
+
+        .teacher-link {
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1280px) {
+            flex-direction: column; 
+        }
+    }
+}
