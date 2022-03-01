@@ -251,6 +251,10 @@ body {
     background-color: $blue;
 }
 
+.blue-text {
+    color: $blue;
+}
+
 .lightgreen-bg {
     background-color: $lightgreen;
 }
@@ -351,10 +355,15 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-top: auto;
+        padding-top: 20px;
 
         @media (max-width: 768px) {
             flex-direction: column;
             align-items: initial;
+        }
+
+        & > p {
+            margin-bottom: 0;
         }
     }
 
@@ -383,6 +392,10 @@ body {
     font-size: 68px;
     margin: 0;
     line-height: 1.2;
+
+    @media (max-width: 768px) {
+        font-size: 40px;
+    }
 }
 
 .intro-course-sect .container,
@@ -955,6 +968,7 @@ body {
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
     }
 
     &-item {
@@ -962,6 +976,10 @@ body {
             color: #FF4D26;
             font-size: 18px;
             margin: 8px 0;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -1022,6 +1040,7 @@ body {
 .start-learning-form {
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 
     .form-input,
     .form-textarea {

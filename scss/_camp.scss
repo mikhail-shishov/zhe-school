@@ -7,6 +7,78 @@
         max-width: 100%;
     }
 
+    .intro-course-sect {
+        padding: 80px 0 0;
+    }
+
+    .course-sect .course-bottom-block {
+        align-items: flex-end;
+
+        @media (max-width: 768px) {
+            align-items: flex-start;
+            flex-direction: column-reverse;
+        }
+
+        .course-specs + .course-specs {
+            p {
+                font-size: 18px;
+            }
+        }
+
+        &>div {
+            margin-top: 15px;
+        }
+    }
+
+    .program-sect .row {
+        flex-direction: column-reverse;
+    }
+
+    .place-sect {
+        .subheading {
+            margin-bottom: 60px;
+        }
+    }
+
+    .place-row {
+        display: flex;
+        padding-top: 60px;
+        gap: 40px;
+
+        @media (max-width: 768px) {
+            flex-direction: column-reverse;
+            padding-top: 40px;
+            gap: 10px;
+
+            .place-arrow {
+                display: none;
+            }
+        }
+
+        .text {
+            margin-top: 0;
+        }
+
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+            align-items: flex-end;
+            margin-top: -150px;
+
+            @media (max-width: 768px) {
+                flex-direction: column-reverse;
+                margin-top: 0;
+            }
+        }
+
+        .place-img {
+            max-width: 43vw;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
     .teachers-container {
         display: flex;
         gap: 30px;
@@ -29,6 +101,14 @@
         .teacher-text {
             padding: 260px 0 0;
             position: relative;
+
+            .text {
+                font-size: 30px;
+
+                @media (max-width: 768px) {
+                    font-size: 40px;
+                }
+            }
         }
 
         .teacher-link {
